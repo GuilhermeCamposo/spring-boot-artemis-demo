@@ -10,9 +10,9 @@
 	<description>SpringBootArtemisProducer</description>
 
 	<parent>
-	  <groupId>com.sbm.artemis.demo</groupId>
-    <artifactId>spring-boot-artemis-demo-multi-module</artifactId>
-    <version>0.1.0</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>1.5.2.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -30,7 +30,7 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-artemis</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

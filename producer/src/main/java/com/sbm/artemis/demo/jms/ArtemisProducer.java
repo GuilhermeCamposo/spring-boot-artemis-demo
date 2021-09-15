@@ -11,15 +11,12 @@ import org.springframework.stereotype.Component;
 public class ArtemisProducer {
 	@Autowired
 	JmsTemplate jmsTemplate;
-	
+
 	@Value("${jms.queue.destination}")
 	String destinationQueue;
-	
+
 	public void send(String msg){
 		jmsTemplate.convertAndSend(destinationQueue, msg);
-	}
-	public void send(Person p){
-		jmsTemplate.convertAndSend(destinationQueue, p);
 	}
 
 
