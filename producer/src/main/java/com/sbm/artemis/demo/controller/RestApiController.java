@@ -16,6 +16,7 @@ public class RestApiController {
 	@RequestMapping(value="/produce")
 	public String produce(@RequestParam("msg")String msg){
 		producer.send(msg);
+		System.out.println("Incoming message >>> "+ msg);
 		return "Done";
 	}
 

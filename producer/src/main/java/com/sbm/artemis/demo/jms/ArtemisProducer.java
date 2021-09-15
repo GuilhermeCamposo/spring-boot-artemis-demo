@@ -17,6 +17,7 @@ public class ArtemisProducer {
 
 	public void send(String msg){
 		jmsTemplate.convertAndSend(destinationQueue, msg);
+		System.out.println("message sent");
 	}
 
 
