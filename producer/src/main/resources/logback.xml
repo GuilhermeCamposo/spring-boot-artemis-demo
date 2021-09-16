@@ -9,8 +9,15 @@
         </encoder>
     </appender>
 
+    <logger name="org.springframework.jms" level="debug"  additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
 
-    <root level="debug">
+    <logger name="org.apache.activemq" level="debug"  additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <root level="info">
         <appender-ref ref="CONSOLE" />
     </root>
 

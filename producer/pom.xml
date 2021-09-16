@@ -5,6 +5,7 @@
 
 	<artifactId>artemis-producer</artifactId>
 	<packaging>jar</packaging>
+	<version>1.0.0</version>
 
 	<name>producer</name>
 	<description>SpringBootArtemisProducer</description>
@@ -12,7 +13,7 @@
 	<parent>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-parent</artifactId>
-			<version>1.5.2.RELEASE</version>
+			<version>2.5.4</version>
 	</parent>
 
 	<properties>
@@ -22,6 +23,12 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>2.5.4</version>
+			<type>pom</type>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
